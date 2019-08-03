@@ -6,6 +6,6 @@ def updateTimezone (toConvert):
   datetimeEST = datetimeUTC.astimezone(pytz.timezone("US/Eastern")).strftime('%m/%d/%Y %I:%M %p')
   output = datetimeEST
   
-  print (output)
+  return (output)
 
 updateTimezone('2019-07-01T00:00:00Z')
